@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -9,8 +9,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Mavnn.MythMaker</RootNamespace>
     <AssemblyName>Mavnn.MythMaker</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
     <Name>Mavnn.MythMaker</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,9 +57,17 @@
       <Paket>True</Paket>
       <Link>paket-files/ProvidedTypes.fsi</Link>
     </Content>
+    <None Include="paket.references" />
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="1 - Minimal Provider Implementation.fs" />
-    <None Include="paket.references" />
+    <Compile Include="2 - Provide a Static Type.fs" />
+    <Compile Include="3 - Add a Parameter.fs" />
+    <None Include="Interlude - Quotations.fsx" />
+    <Compile Include="4 - Types with Constructors.fs" />
+    <Compile Include="5 - Methods!.fs" />
+    <Compile Include="Interlude - Simple Parsing.fs" />
+    <Compile Include="6 - Generating Characters.fs" />
+    <Compile Include="7 - Generating Useful Characters.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

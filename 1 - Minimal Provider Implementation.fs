@@ -7,4 +7,4 @@ open Microsoft.FSharp.Core.CompilerServices
 type MythProvider1() = 
     inherit TypeProviderForNamespaces()
 
-
+// We also need to add an assembly level attribute. Check AssemblyInfo.fs
